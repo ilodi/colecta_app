@@ -8,8 +8,12 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('Login'),
+    return Scaffold(
+      body: SafeArea(
+              child: Stack(
+          children: <Widget>[Text('Login')],
+        ),
+      ),
     );
   }
 }
